@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSAFIT</title>
+    <link rel="stylesheet" href="../css/main-style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">SSAFIT</div>
+        <div class="auth-buttons">
+            <a href="../html/login.html" class="login-btn" id="loginBtn">로그인</a>
+            <a href="#" class="logout-btn" id="logoutBtn" style="display: none;">로그아웃</a>
+            <span class="user-name" id="userName" style="display: none; margin-right: 10px; font-weight: bold;"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="user-info-section">
+            <div class="my-info-box">
+                <div class="info-content" id="myInfoContent">
+                    <h4>MY 정보</h4>
+                    <p id="userInfoText">로그인하여 개인화된 정보를 확인하세요</p>
+                </div>
+            </div>
+            <div class="today-goal-box">
+                <div class="info-content">
+                    <h4>TODAY 목표</h4>
+                    <p>오늘도 건강한 하루 보내세요! 💪</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-search-section">
+            <div class="video-search-banner">
+            <form action="search" method="GET">
+                <input type="text" placeholder="검색어를 입력해주세요">
+            </form>
+            </div>
+        </section>
+
+        <section class="video-list-section">
+            <h3 class="section-title">추천 영상 리스트</h3>
+            <div class="video-list-container">
+            </div>
+        </section>
+
+        <section class="exercise-part-section">
+            <h3 class="section-title">운동 부위 선택</h3>
+            <div class="exercise-buttons">
+                <button class="part-btn active" data-part="전신">전신</button>
+                <button class="part-btn" data-part="상체">상체</button>
+                <button class="part-btn" data-part="하체">하체</button>
+                <button class="part-btn" data-part="코어">코어</button>
+            </div>
+            <div class="exercise-videos-container">
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

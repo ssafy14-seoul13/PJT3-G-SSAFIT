@@ -1,0 +1,223 @@
+body {
+    background: linear-gradient(135deg, #d4f2d4 0%, #a8e6a8 100%);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 242, 212, 0.3);
+    overflow: hidden;
+}
+
+.auth-header {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.auth-header h2 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.auth-body {
+    padding: 2rem;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px 15px;
+    border: 2px solid #e8f5e8;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #388e3c, #4caf50);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #81c784, #a5d6a7);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #66bb6a, #81c784);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+    background: transparent;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: white;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.switch-form a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-form a:hover {
+    color: #388e3c;
+    text-decoration: underline;
+}
+
+.alert {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.alert-success {
+    background-color: #e8f5e9;
+    border-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.alert-danger {
+    background-color: #ffebee;
+    border-color: #ffcdd2;
+    color: #c62828;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group-text {
+    background: #f1f8e9;
+    border: 2px solid #e8f5e8;
+    border-radius: 10px 0 0 10px;
+    color: #4caf50;
+}
+
+.form-control.with-icon {
+    border-radius: 0 10px 10px 0;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.welcome-section h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.welcome-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.user-info {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.user-info h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.user-info p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* 추가 스타일링 */
+.fa-dumbbell, .fa-user-plus, .fa-user-circle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.input-group-text .fas {
+    font-size: 1.1rem;
+}
+
+/* 버튼 호버 효과 강화 */
+.btn-lg:hover {
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+}
+
+/* 카드 호버 효과 */
+.auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
+    
+    .auth-body {
+        padding: 1.5rem;
+    }
+    
+    .welcome-section {
+        padding: 2rem 1rem;
+    }
+}

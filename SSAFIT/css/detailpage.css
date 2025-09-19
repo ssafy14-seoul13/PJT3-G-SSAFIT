@@ -1,0 +1,159 @@
+/* 동영상 플레이어 영역 */
+.video-player-section {
+    position: relative;
+    width: 95%;
+    padding-top: 56.25%; /* 16:9 비율 유지 */
+    background-color: #000;
+    overflow: hidden;
+}
+
+/* 썸네일 컨테이너 */
+.thumbnail-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 컨테이너를 가득 채우도록 합니다 */
+}
+
+/* 재생 버튼 */
+#play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 정확히 중앙으로 이동 */
+    font-size: 80px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+#play-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* iframe 스타일 */
+.video-player-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 리뷰 섹션 */
+.review-section {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    margin-top: 20px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#write-review-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-author {
+    font-weight: bold;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.review-actions {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.review-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+}
+
+.like-button {
+    color: #666;
+}
+
+.like-button.liked {
+    color: #ff5722; /* 좋아요 클릭 시 색상 */
+}
+
+
+
+.review-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.review-item .review-content {
+    /* 리뷰 내용이 버튼과 겹치지 않도록 flex-grow를 사용 */
+    flex-grow: 1;
+}
+
+.review-actions {
+    display: flex;
+    gap: 2px;
+}
+
+.action-btn {
+    padding: 1px 1px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}

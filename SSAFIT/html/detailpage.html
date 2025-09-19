@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSAFIT - 운동 영상 상세 페이지</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/detailpage.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">SSAFIT</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="login-btn">로그인</a>
+            <a href="#" class="logout-btn" style="display: none;">로그아웃</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="video-player-section">
+            <div class="thumbnail-container">
+                <img id="video-thumbnail" src="" alt="Video Thumbnail">
+                <div id="play-button">&#9654;</div>
+            </div>
+        </section>
+
+        <section class="review-section">
+            <div class="review-header">
+                <h3>리뷰</h3>
+                <button id="write-review-btn">작성</button>
+            </div>
+            <div class="review-list">
+                <!-- 리뷰들이 동적으로 생성됩니다 -->
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="../js/detailpage.js"></script>
+</body>
+</html>
